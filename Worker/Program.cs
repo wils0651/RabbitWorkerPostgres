@@ -11,7 +11,6 @@ class Program
 {
     public static void Main()
     {
-        // TODO: Pull credentials from file
         var hostName = ConfigurationManager.AppSettings.Get("HostName");
         var userName = ConfigurationManager.AppSettings.Get("userName");
         var password = ConfigurationManager.AppSettings.Get("password");
