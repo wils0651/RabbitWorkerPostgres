@@ -1,0 +1,13 @@
+.\.vscode\
+.\.vs
+.\RabbitWorker.Data\bin\
+.\RabbitWorker.Domain\bin\
+.\Worker\bin\
+.\RabbitWorker.Data\obj\
+.\RabbitWorker.Domain\obj\
+.\Worker\obj\
+
+**\bin
+**\obj
+**\.vs
+**\.vscode

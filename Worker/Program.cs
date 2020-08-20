@@ -4,17 +4,23 @@ using RabbitMQ.Client.Events;
 using System.Text;
 using Worker;
 using RabbitWorker.Data;
+using System.Configuration;
+using System.Collections.Specialized;
 
 class Program
 {
     public static void Main()
     {
         // TODO: Pull credentials from file
+        var hostName = ConfigurationManager.AppSettings.Get("HostName");
+        var userName = ConfigurationManager.AppSettings.Get("userName");
+        var password = ConfigurationManager.AppSettings.Get("password");
+
         var factory = new ConnectionFactory()
         {
-            HostName = "192.168.1.2",
-            UserName = "test",
-            Password = "test"
+            HostName = hostName,
+            UserName = userName,
+            Password = password
         };
 
         // TODO: DI
