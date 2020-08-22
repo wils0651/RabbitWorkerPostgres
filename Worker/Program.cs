@@ -5,7 +5,6 @@ using System.Text;
 using Worker;
 using RabbitWorker.Data;
 using System.Configuration;
-using System.Collections.Specialized;
 
 class Program
 {
